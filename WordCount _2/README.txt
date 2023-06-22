@@ -4,5 +4,7 @@
 
 3. Tryk på input feltet oppe i højre hjørne. 
 
-4. vælg en .txt fil, evt. den vedlagte .txt i projekt mappen
+4. vælg en fil (kan gentages)
+
+5. Tryk submit for at få resultattet ud i konsollen.
 
