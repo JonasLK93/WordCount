@@ -1,3 +1,3 @@
 F12 og åben console. 
 
-I konsellen er der udskrevet et objekt med test resultater. 
+I konsollen er der udskrevet et objekt med test resultater. 
