@@ -26,39 +26,20 @@ const school = [
 function analyzeStudentGrades(school) {
   const numTests = school[0][0].scores.length;
   const testInsights = []
-
   let klasse_average = []
-
   let allStudentsAndGrades = collectAllStudentGrades(school)
   let TestGrades = getTestGrades(school)
-  
   let totalScore = 0;
-
-
   let students = allStudentsAndGrades[1]
   let grades = allStudentsAndGrades[0];
   let highestScoresForEachTest = TestGrades[0]
   let lowestScoresForEachTest = TestGrades[1]
   let topPerformersIndex = TestGrades[2]
-
   let topPerformers = []
-
-  /* 
-   */
   
   topPerformersIndex.forEach(topIndex => {
     topPerformers.push(students[topIndex])
   });
-
-
-
-
-
- /* console.log(grades) */
-/* Total score + gennemsnittet blandt alle elever */
-
-
-
 
 grades.forEach(grade => {
   totalScore+=grade
@@ -93,7 +74,6 @@ return {
 };
 /* ------------------ */
 }
-
 
 function collectStudentGradesFromClass(klasse) {
   var grades = []
@@ -130,7 +110,6 @@ function collectAllStudentGrades(school){
 
   return [grades, students]
 }
-
 
 function getTestGrades(school){
   let index=0;
@@ -170,8 +149,6 @@ eachTestResults.forEach(eachTest => {
 return [highestScoresForEachTest, lowestScoresForEachTest, topPerformers]
 
 }
-
-
 
 let result = analyzeStudentGrades(school)
 console.log(result)
